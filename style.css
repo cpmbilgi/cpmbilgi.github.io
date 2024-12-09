@@ -1,0 +1,224 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Başlık ve header stili */
+  header {
+    background: linear-gradient(45deg, #ff0099, #6a00ff, #00b3ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff0099, 0 0 50px #6a00ff;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  /* Header animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Navigasyon menüsü */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 15px;
+    border-bottom: 3px solid #00b3ff;
+    backdrop-filter: blur(5px);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0099;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;
+  }
+  
+  /* İçerik bölümleri */
+  .section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.8);
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #00b3ff;
+  }
+  
+  .section p, .section ul, .section ol {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 20px 0;
+    line-height: 1.8;
+  }
+  
+  .section img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* İletişim Formu */
+  form {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 255, 255, 0.5);
+  }
+  
+  form label {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input:focus, form textarea:focus {
+    background-color: #444;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  }
+  
+  form button {
+    background-color: #ff0099;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 0, 153, 0.6);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #ff4b5c;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 153, 0.8);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 1rem;
+    margin-top: 60px;
+    border-top: 3px solid #00b3ff;
+  }
+  
+  footer p {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  /* Mobile uyumluluk */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .section h2 {
+      font-size: 2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    form {
+      padding: 30px;
+    }
+  }
+  
